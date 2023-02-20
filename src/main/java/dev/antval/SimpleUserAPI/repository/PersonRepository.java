@@ -22,7 +22,7 @@ public class PersonRepository {
                     new Person(8L,"Miguel","Daniel",35)
             ));
     public Optional<Person> getById(Long id){
-        return allPeople.stream().filter(p->p.id().equals(id)).findFirst();
+        return allPeople.stream().filter(p->p.getId().equals(id)).findFirst();
     }
 
     public List<Person> getAll(){return allPeople;}
