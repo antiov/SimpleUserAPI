@@ -1,4 +1,4 @@
-FROM openjdk:20-ea-28-bullseye
+FROM openjdk:11-ea-28
 
 ARG JAR_FILE=./target/*.jar
 
