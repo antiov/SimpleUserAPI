@@ -1,0 +1,14 @@
+type User {
+    id: ID!
+    name: String
+    lastName: String
+    age: Int
+    position: String
+    seniority: String
+}
+
+type Query {
+    getById(id: Int): User
+    getUsers(page: Int, size: Int): [User]!
+    searchUsers(position: String!, seniority: String!): [User]!
+}
